@@ -1,4 +1,4 @@
-module aw-sync-agent-plugins
+module github.com/phrp720/aw-sync-agent-plugins
 
 go 1.23.5
 
