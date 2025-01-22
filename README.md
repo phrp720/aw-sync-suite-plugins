@@ -33,13 +33,13 @@ Inside this  folder you should contain the plugin implementation idea which will
 
 
 
-| Method            | Signature                                                                     |
-|-------------------|-------------------------------------------------------------------------------|
-| `Initialize`      | `Initialize()`                                                                |
-| `Execute`         | `Execute(watcher string, events Events, userID string, includeHostName bool)` |
-| `ReplicateConfig` | `ReplicateConfig(path string)`                                                |
-| `RawName`         | `RawName() string`                                                            |
-| `Name`            | `Name() string`                                                               |
+| Method            | Signature                                                                     | Description                                                                             |
+|-------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `Initialize`      | `Initialize()`                                                                | Initialization of the plugin  (Before the aw data)                                      |
+| `Execute`         | `Execute(watcher string, events Events, userID string, includeHostName bool)` | Execution of the plugin (While having the aw data)                                      |
+| `ReplicateConfig` | `ReplicateConfig(path string)`                                                | Replicate the plugin config (for service purposes)                                      |
+| `RawName`         | `RawName() string`                                                            | Get the raw name of the plugin (module name)                                            |
+| `Name`            | `Name() string`                                                               | Get the name of the configuration of the plugin (with prefix `aw-plugin-{RawName}.yaml` |
 
 
 ## 📝 License
