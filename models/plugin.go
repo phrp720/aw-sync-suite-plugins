@@ -4,7 +4,7 @@ import "time"
 
 type Plugin interface {
 	Initialize()
-	Execute(watcher string, events Events, userID string, includeHostName bool)
+	Execute(events Events, watcher string, userID string, includeHostName bool) Events
 	ReplicateConfig(path string)
 	RawName() string
 	Name() string

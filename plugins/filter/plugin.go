@@ -29,7 +29,7 @@ func (f *Plugin) Initialize() {
 
 }
 
-func (f *Plugin) Execute(watcher string, events models.Events, userID string, includeHostName bool) {
+func (f *Plugin) Execute(events models.Events, watcher string, userID string, includeHostName bool) models.Events {
 	// Implementation
 	//Apply the filters
 	var modifiedEvents models.Events
@@ -59,6 +59,7 @@ func (f *Plugin) Execute(watcher string, events models.Events, userID string, in
 		}
 		modifiedEvents = append(modifiedEvents, event)
 	}
+	return modifiedEvents
 }
 
 func (f *Plugin) ReplicateConfig(path string) {
