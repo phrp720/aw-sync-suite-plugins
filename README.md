@@ -18,9 +18,9 @@ Plugins of aw-sync-suite Agent are used to extend the functionality of the agent
 ## ⚙️ Plugins
 
 
-| Plugin    | Description                       | Has Config | Config File            |
-|-----------|-----------------------------------|------------|------------------------|
-| `filters` | Filters the data of ActivityWatch | ✅          | `aw-plugin-filtes.yml` |
+| Plugin    | Description                       | Has Config | Config File             |
+|-----------|-----------------------------------|------------|-------------------------|
+| `filters` | Filters the data of ActivityWatch | ✅          | `aw-plugin-filtes.yaml` |
 
 
 
