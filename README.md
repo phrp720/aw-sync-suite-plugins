@@ -1,12 +1,12 @@
-<h1 align="center">aw-sync-agent-plugins</h1>
+<h1 align="center">aw-sync-suite-plugins</h1>
 <p align="center">
 
-   <a href="https://github.com/phrp720/aw-sync-agent-plugins/actions/workflows/tests.yaml?query=branch%3Amain">
-    <img title="Tests" src="https://github.com/phrp720/aw-sync-agent-plugins/actions/workflows/tests.yaml/badge.svg?branch=main" alt="tests"/>
+   <a href="https://github.com/phrp720/aw-sync-suite-plugins/actions/workflows/tests.yaml?query=branch%3Amain">
+    <img title="Tests" src="https://github.com/phrp720/aw-sync-suite-plugins/actions/workflows/tests.yaml/badge.svg?branch=main" alt="tests"/>
   </a>
 
-  <a href="https://github.com/phrp720/aw-sync-agent-plugins/releases">
-    <img title="Latest release" src="https://img.shields.io/github/v/release/phrp720/aw-sync-agent-plugins" alt="Latest release">
+  <a href="https://github.com/phrp720/aw-sync-suite-plugins/releases">
+    <img title="Latest release" src="https://img.shields.io/github/v/release/phrp720/aw-sync-suite-plugins" alt="Latest release">
   </a>
 </p>
 
