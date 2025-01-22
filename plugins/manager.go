@@ -21,7 +21,7 @@ func Select(plugins []models.Plugin, names []string) []models.Plugin {
 	}
 
 	for _, plugin := range plugins {
-		if _, exists := nameSet[plugin.Name()]; exists {
+		if _, exists := nameSet[plugin.RawName()]; exists {
 			selectedPlugins = append(selectedPlugins, plugin)
 		}
 	}
