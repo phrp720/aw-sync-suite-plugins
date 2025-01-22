@@ -21,7 +21,7 @@ Plugins of aw-sync-suite Agent are used to extend the functionality of the agent
 To write a plugin, you need to create a Go folder in the `plugins` directory.
 Inside this  folder you should contain the plugin implementation idea which will implements the `Plugin` interface as a core of the plugin.
 
-```go
+
 
 | Method            | Signature                                                                     |
 |-------------------|-------------------------------------------------------------------------------|
