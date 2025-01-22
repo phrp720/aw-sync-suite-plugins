@@ -1,7 +1,7 @@
 <h1 align="center">aw-sync-agent-plugins</h1>
 
 ## 🔍 About
-This is a Repository that hosts the plugins of aw-sync-suite Agent.
+This is a Repository that hosts the plugins of aw-sync-suite [Agent](https://github.com/phrp720/aw-sync-suite/blob/master/aw-sync-agent/README.md).
 
 Plugins of aw-sync-suite Agent are used to extend the functionality of the agent. The plugins are written in Go and are executed by the agent during the aggregation stage.
 
