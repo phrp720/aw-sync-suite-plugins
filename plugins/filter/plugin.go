@@ -64,7 +64,9 @@ func (f *Plugin) Execute(events models.Events, watcher string, userID string, in
 
 func (f *Plugin) ReplicateConfig(path string) {
 	err := CreateConfigFile(path, f.Name())
-	log.Print(err)
+	if err != nil {
+		log.Print(err)
+	}
 }
 
 func (f *Plugin) Name() string {
