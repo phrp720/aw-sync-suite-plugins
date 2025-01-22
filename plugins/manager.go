@@ -1,8 +1,8 @@
 package plugins
 
 import (
-	"aw-sync-agent-plugins/models"
-	"aw-sync-agent-plugins/plugins/filter"
+	"github.com/phrp720/aw-sync-agent-plugins/models"
+	"github.com/phrp720/aw-sync-agent-plugins/plugins/filter"
 )
 
 func Initialize() []models.Plugin {

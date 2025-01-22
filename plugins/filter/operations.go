@@ -1,8 +1,8 @@
 package filter
 
 import (
-	"aw-sync-agent-plugins/models"
 	"fmt"
+	"github.com/phrp720/aw-sync-agent-plugins/models"
 	"log"
 	"strconv"
 	"strings"

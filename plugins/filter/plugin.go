@@ -1,7 +1,7 @@
 package filter
 
 import (
-	"aw-sync-agent-plugins/models"
+	"github.com/phrp720/aw-sync-agent-plugins/models"
 	"log"
 	"sort"
 )
