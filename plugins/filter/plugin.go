@@ -70,7 +70,7 @@ func (f *Plugin) ReplicateConfig(path string) {
 }
 
 func (f *Plugin) Name() string {
-	return "aw-plugin-" + f.RawName() + ".yml"
+	return "aw-plugin-" + f.RawName() + ".yaml"
 }
 
 func (f *Plugin) RawName() string {
