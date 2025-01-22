@@ -1,4 +1,14 @@
 <h1 align="center">aw-sync-agent-plugins</h1>
+<p align="center">
+
+   <a href="https://github.com/phrp720/aw-sync-agent-plugins/actions/workflows/tests.yaml?query=branch%3Amaster">
+    <img title="Tests" src="https://github.com/phrp720/aw-sync-agent-plugins/actions/workflows/tests.yaml/badge.svg?branch=master" alt="tests"/>
+  </a>
+
+  <a href="https://github.com/phrp720/aw-sync-agent-plugins/releases">
+    <img title="Latest release" src="https://img.shields.io/github/v/release/phrp720/aw-sync-agent-plugins" alt="Latest release">
+  </a>
+</p>
 
 ## 🔍 About
 This is a Repository that hosts the plugins of aw-sync-suite [Agent](https://github.com/phrp720/aw-sync-suite/blob/master/aw-sync-agent/README.md).
