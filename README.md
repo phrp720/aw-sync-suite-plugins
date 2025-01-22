@@ -1,10 +1,11 @@
-# aw-sync-agent-plugins
+<h1 align="center">aw-sync-agent-plugins</h1>
 
+## 🔍 About
 This is a Repository that hosts the plugins of aw-sync-suite Agent.
 
 Plugins of aw-sync-suite Agent are used to extend the functionality of the agent. The plugins are written in Go and are executed by the agent during the aggregation stage.
 
-## Plugins
+## ⚙️ Plugins
 
 
 | Plugin    | Description                       | Has Config | Config File            |
@@ -13,7 +14,7 @@ Plugins of aw-sync-suite Agent are used to extend the functionality of the agent
 
 
 
-## How to write a plugin
+## 🛠️ How to create a plugin
 
 ### Core Plugin Structure
 
@@ -29,3 +30,10 @@ Inside this  folder you should contain the plugin implementation idea which will
 | `ReplicateConfig` | `ReplicateConfig(path string)`                                                |
 | `RawName`         | `RawName() string`                                                            |
 | `Name`            | `Name() string`                                                               |
+
+
+## 📝 License
+
+This project is licensed under the **MIT license**.
+
+See [LICENSE](https://github.com/phrp720/aw-sync-suite/blob/master/LICENSE) for more information.
