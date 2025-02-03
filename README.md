@@ -15,7 +15,7 @@ This is a Repository that hosts the plugins of aw-sync-suite [Agent](https://git
 
 Plugins of aw-sync-suite Agent are used to extend the functionality of the agent. The plugins are written in Go and are executed by the agent during the aggregation stage.
 
-## ⚙️ Plugins
+## ⚙️ Available Plugins
 
 
 | Plugin    | Description                       | Has Config | Config File             |
@@ -26,21 +26,11 @@ Plugins of aw-sync-suite Agent are used to extend the functionality of the agent
 
 ## 🛠️ How to create a plugin
 
-### Core Plugin Structure
+For instructions on creating a plugin, please refer [here](https://github.com/phrp720/aw-sync-suite-plugins/wiki/%F0%9F%93%9D-How-to-Create-a-Plugin).
 
-To write a plugin, you need to create a Go folder in the `plugins` directory.
-Inside this  folder you should contain the plugin implementation idea which will implements the `Plugin` interface as a core of the plugin.
+## 🔗 How to integrate a plugin
 
-
-
-| Method            | Signature                                                                     | Description                                                                             |
-|-------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| `Initialize`      | `Initialize()`                                                                | Initialization of the plugin  (Before the aw data)                                      |
-| `Execute`         | `Execute(watcher string, events Events, userID string, includeHostName bool)` | Execution of the plugin (While having the aw data)                                      |
-| `ReplicateConfig` | `ReplicateConfig(path string)`                                                | Replicate the plugin config (for service purposes)                                      |
-| `RawName`         | `RawName() string`                                                            | Get the raw name of the plugin (module name)                                            |
-| `Name`            | `Name() string`                                                               | Get the name of the configuration of the plugin (with prefix `aw-plugin-{RawName}.yaml` |
-
+For instructions on integrating a plugin, please refer [here](https://github.com/phrp720/aw-sync-suite-plugins/wiki/%F0%9F%9B%A0%EF%B8%8F--How-to-Integrate-a-Plugin).
 
 ## 📝 License
 
