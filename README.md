@@ -20,6 +20,14 @@ This is a Repository that hosts the plugins of aw-sync-suite [Agent](https://git
 
 Plugins of aw-sync-suite Agent are used to extend the functionality of the agent. The plugins are written in Go and are executed by the agent during the aggregation stage.
 
+
+## 🔌 Available Plugins
+
+
+| Plugin    | Description                       | Has Config | Config File              | Documentation                                                       |
+|-----------|-----------------------------------|------------|--------------------------|---------------------------------------------------------------------|
+| `filters` | Filters the data of ActivityWatch | ✅          | `aw-plugin-filters.yaml` | [📄](https://github.com/phrp720/aw-sync-suite-plugins/wiki/Filters) |
+
 ## ⚙️ How It Works
 
 When the `aw-sync-agent` starts, it initializes the chosen plugins specified in the configuration. The workflow is as follows:
@@ -49,12 +57,6 @@ This modular approach allows for flexible and customizable data processing, ensu
 
 </div>
 
-## 🔌 Available Plugins
-
-
-| Plugin    | Description                       | Has Config | Config File              | Documentation                                                       |
-|-----------|-----------------------------------|------------|--------------------------|---------------------------------------------------------------------|
-| `filters` | Filters the data of ActivityWatch | ✅          | `aw-plugin-filters.yaml` | [📄](https://github.com/phrp720/aw-sync-suite-plugins/wiki/Filters) |
 
 ## 🛠️ How to create a plugin
 
