@@ -33,19 +33,23 @@ When the `aw-sync-agent` starts, it initializes the chosen plugins specified in 
 
 4. **Data Push to Prometheus**:
    - The final processed data is then securely pushed to the Prometheus database using the remote-write feature.
-  
-
 
 This modular approach allows for flexible and customizable data processing, ensuring that only the desired data is sent to Prometheus while maintaining the integrity and confidentiality of sensitive information.
+
+#### flow:
+
+<div align="center">
+
+   ![flow](plugins-flow-diagram.png)
+
+</div>
 
 ## 🔌 Available Plugins
 
 
-Plugin | Description | Has Config | Config File | Documentation
--- | -- | -- | -- | --
-`filters` | Filters the data of ActivityWatch | ✅ | `aw-plugin-filters.yaml` | [📄](https://github.com/phrp720/aw-sync-suite-plugins/wiki/Filters)
-
-
+| Plugin    | Description                       | Has Config | Config File              | Documentation                                                       |
+|-----------|-----------------------------------|------------|--------------------------|---------------------------------------------------------------------|
+| `filters` | Filters the data of ActivityWatch | ✅          | `aw-plugin-filters.yaml` | [📄](https://github.com/phrp720/aw-sync-suite-plugins/wiki/Filters) |
 
 ## 🛠️ How to create a plugin
 
