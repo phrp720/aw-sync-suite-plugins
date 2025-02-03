@@ -36,7 +36,7 @@ When the `aw-sync-agent` starts, it initializes the chosen plugins specified in 
 
 This modular approach allows for flexible and customizable data processing, ensuring that only the desired data is sent to Prometheus while maintaining the integrity and confidentiality of sensitive information.
 
-#### flow:
+#### flow-diagram:
 
 <div align="center">
 
