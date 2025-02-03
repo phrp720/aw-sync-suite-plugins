@@ -10,6 +10,11 @@
   </a>
 </p>
 
+<p align="center">
+ <br>
+  📖 For detailed documentation, visit our <a href="https://github.com/phrp720/aw-sync-suite-plugins/wiki">Plugin</a> and <a href="https://github.com/phrp720/aw-sync-suite/wiki">Agent</a> GitHub Wiki.
+</p>
+
 ## 🔍 About
 This is a Repository that hosts the plugins of aw-sync-suite [Agent](https://github.com/phrp720/aw-sync-suite/blob/master/aw-sync-agent/README.md).For versions of aw-sync-suite  >= 0.1.3
 
