@@ -1,8 +1,8 @@
 Scripts:
   - Script:
-    name: "test-script.sh"
-    path: "/home/tester/Desktop/scripts/"
+    name: "test"
+    path: "/home/tester/Desktop/scripts/test-script.sh"
   - Script:
-    name: "dummy-script.sh"
-    path: "/home/tester/Desktop/scripts/"
-
+    name: "dummy"
+    path: "/home/tester/Desktop/scripts/dummy-script.sh"
+    timeout: 10

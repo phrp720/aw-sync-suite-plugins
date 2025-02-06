@@ -2,11 +2,14 @@ package script
 
 import (
 	"bytes"
+	"context"
 	"encoding/json"
+	"errors"
 	"github.com/phrp720/aw-sync-agent-plugins/models"
 	"github.com/phrp720/aw-sync-agent-plugins/util"
 	"log"
 	"os/exec"
+	"time"
 )
 
 var config models.ScriptConfig
@@ -35,16 +38,25 @@ func (f *Plugin) Execute(events models.Events, watcher string, userID string, in
 	}
 
 	for _, script := range config.Scripts {
-		AbsPath := script.Path + script.Name
 
-		if !util.FileExists(AbsPath) {
+		if !util.FileExists(script.Path) {
 			log.Printf("Error running %s : %s", script.Name, "No such file or directory.")
 			continue
 		} else {
 			log.Printf("Running %s", script.Name)
 
 		}
-		cmd := exec.Command(AbsPath)
+
+		// Set a default timeout of 30 seconds
+		if script.Timeout == 0 {
+			script.Timeout = 30
+		}
+
+		// Create a context with a timeout
+		ctx, cancel := context.WithTimeout(context.Background(), time.Duration(script.Timeout)*time.Second)
+		defer cancel()
+
+		cmd := exec.CommandContext(ctx, script.Path)
 		// Set up stdin and stdout
 		cmd.Stdin = bytes.NewReader(eventsToJSON)
 		var stdout bytes.Buffer
@@ -52,6 +64,11 @@ func (f *Plugin) Execute(events models.Events, watcher string, userID string, in
 
 		// Run the command
 		err = cmd.Run()
+		if errors.Is(ctx.Err(), context.DeadlineExceeded) {
+			log.Printf("Error running %s : %s", script.Name, "Timeout exceeded")
+			return events
+
+		}
 		if err != nil {
 			log.Printf("Error running %s : %v", script.Name, err)
 			return events
