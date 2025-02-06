@@ -3,11 +3,14 @@ package plugins
 import (
 	"github.com/phrp720/aw-sync-agent-plugins/models"
 	"github.com/phrp720/aw-sync-agent-plugins/plugins/filter"
+	"github.com/phrp720/aw-sync-agent-plugins/plugins/script"
 )
 
 func Initialize() []models.Plugin {
 	var plugins []models.Plugin
+
 	plugins = append(plugins, &filter.Plugin{})
+	plugins = append(plugins, &script.Plugin{})
 
 	return plugins
 }

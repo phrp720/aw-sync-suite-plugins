@@ -1,0 +1,8 @@
+Scripts:
+  - Script:
+    name: "test-script.sh"
+    path: "/home/tester/Desktop/scripts/"
+  - Script:
+    name: "dummy-script.sh"
+    path: "/home/tester/Desktop/scripts/"
+
