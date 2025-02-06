@@ -28,7 +28,7 @@ func (f *Plugin) Execute(events models.Events, watcher string, userID string, in
 	if config.Scripts == nil {
 		return events
 	} else {
-		log.Printf("Scripts")
+		log.Printf("###Scripts Prompt###")
 	}
 	// Convert events to JSON
 	eventsToJSON, err := json.Marshal(events)
@@ -80,12 +80,12 @@ func (f *Plugin) Execute(events models.Events, watcher string, userID string, in
 			log.Printf("Error unmarshalling script output: %v", err)
 			return events
 		}
-		if EventsBuffer != nil {
-			events = EventsBuffer
-			log.Printf("Finished %s ", script.Name)
+		events = EventsBuffer
+		log.Printf("Finished %s ", script.Name)
 
-		}
-
+	}
+	if config.Scripts != nil {
+		log.Printf("####################")
 	}
 
 	return events
