@@ -9,6 +9,7 @@ import (
 func Initialize() []models.Plugin {
 	var plugins []models.Plugin
 
+	// Add all the plugins here
 	plugins = append(plugins, &filter.Plugin{})
 	plugins = append(plugins, &script.Plugin{})
 
