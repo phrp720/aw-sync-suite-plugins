@@ -30,6 +30,11 @@ func (f *Plugin) Initialize() {
 }
 
 func (f *Plugin) Execute(events models.Events, watcher string, userID string, includeHostName bool) models.Events {
+
+	if config.Filters == nil {
+		return events
+	}
+
 	// Implementation
 	//Apply the filters
 	var modifiedEvents models.Events
@@ -74,5 +79,5 @@ func (f *Plugin) Name() string {
 }
 
 func (f *Plugin) RawName() string {
-	return "filters"
+	return models.FILTER
 }

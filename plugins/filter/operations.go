@@ -3,6 +3,7 @@ package filter
 import (
 	"fmt"
 	"github.com/phrp720/aw-sync-agent-plugins/models"
+	"github.com/phrp720/aw-sync-agent-plugins/util"
 	"log"
 	"strconv"
 	"strings"
@@ -43,7 +44,7 @@ func ValidateFilters(filters []models.Filter) ([]models.Filter, int, int, int) {
 func GetCategories(filters []models.Filter) []string {
 	var categories []string
 	for _, filter := range filters {
-		if filter.Category != "" && !contains(categories, filter.Category) {
+		if filter.Category != "" && !util.Contains(categories, filter.Category) {
 			categories = append(categories, filter.Category)
 		}
 	}
@@ -115,7 +116,7 @@ func Replace(data map[string]interface{}, plain []models.PlainReplace, regex []m
 func GetMatchingFilters(filters []models.Filter, watcher string) []models.Filter {
 	var matchingFilters []models.Filter
 	for _, filter := range filters {
-		if len(filter.Watchers) == 0 || contains(filter.Watchers, watcher) {
+		if len(filter.Watchers) == 0 || util.Contains(filter.Watchers, watcher) {
 			matchingFilters = append(matchingFilters, filter)
 		}
 	}
@@ -213,14 +214,4 @@ func PrintCategories(categories []string) {
 		fmt.Printf("| %-*s | %-*s |\n", maxKeyLength, key, maxValueLength, value)
 	}
 	fmt.Println(border)
-}
-
-// contains checks if a slice contains a given string
-func contains(slice []string, item string) bool {
-	for _, s := range slice {
-		if s == item {
-			return true
-		}
-	}
-	return false
 }
