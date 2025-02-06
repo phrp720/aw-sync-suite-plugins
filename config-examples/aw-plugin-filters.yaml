@@ -18,11 +18,7 @@ Filters:
       - key: app
         value: Google.*
       - key: title
-        value:  GitHub|Stack Overflow|BitBucket|Gitlab|vim|Spyder|kate|Ghidra|Scite|code|eclipse|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad|gedit|atom|vscode|jupyter|pycharm|intellij|netbeans|eclipse|visual studio|visual
-    category: Programming
-
-  - Filter:
-    filter-name: Image Category
+        value:  GitHub|Stack Overflow|BitBucket|Gitlab|vim|Spyderbeans|eclipse|visual studio|visual studio code|emacs|vim|nano|sublime|notepad
     enable: true
     watchers: []
     target:
